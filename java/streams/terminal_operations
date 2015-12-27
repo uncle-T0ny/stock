@@ -1,0 +1,48 @@
+1. findFirst
+return Optional<Element> first
+collection.stream().findFirst().orElse(«1»)
+
+2. findAny 
+return Optional<Element> any
+collection.stream().findAny().orElse(«1»)
+
+3. collect
+return result in collection view or other data structures
+collection.stream().filter((s) -> s.contains(«1»)).collect(Collectors.toList())
+
+4. count 
+return the amount of elements in stream
+collection.stream().filter("a1"::equals).count()
+
+5. anyMatch
+return true if condition is true for any one element
+collection.stream().anyMatch(«a1»::equals)
+
+6. noneMatch
+return true if condition is not true for any element
+collection.stream().noneMatch("a8"::equals)
+
+7. allMatch 
+return true if for all the elements condition is true
+collection.stream().allMatch((s) -> s.contains("1"))
+
+8. min 
+return min element, as condition uses comporator 
+collection.stream().min(String::compareTo).get()
+
+9. max 
+the same of min
+
+10. forEach
+apply the function to each element, order not guaranteed
+
+11. forEachOrdered
+the same of forEach, but order garanteed
+
+12. toArray 
+collection.stream().map(String::toUpperCase).toArray(String[]::new);
+
+13. reduce 
+allow to apply agrigation functions for all elements in collection
+end return result
+collection.stream().reduce((s1, s2) -> s1 + s2).orElse(0)

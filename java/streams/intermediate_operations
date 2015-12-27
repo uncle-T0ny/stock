@@ -1,0 +1,45 @@
+1. filter
+return entries, that match condition
+collection.stream().filter("a1"::equals)
+
+2. skip 
+allow to skip N first elements 
+collection.stream().skip(collection.size() - 1).findFirst().orElse("1")
+
+3. distinct
+return stream without duplication(for method equals)
+collection.stream().distinct().collect(Collectors.toList())
+
+4. map
+transforms each element of stream 
+collection.stream().map((s) -> s + "_1").collect(Collectors.toList())
+
+5. peek 
+return same stream, but apply some function to each element
+collection.stream()
+	.map(String::toUpperCase)
+	.peek((e) -> System.out.print("," + e))
+	.collect(Collectors.toList())
+
+6. limit 
+allow to reduce selection specefied amount of elements
+collection.stream().limit(2).collect(Collectors.toList())
+
+7. sorted 
+allow to sort values by comporator
+collection.stream().sorted().collect(Collectors.toList())
+
+8.  mapToInt
+	mapToDouble, 
+	mapToLong
+the same of the map operation, but return the stream
+of numbers 
+collection.stream().mapToInt((s) -> Integer.parseInt(s)).toArray()
+
+9.  flatMap,
+	flatMapToInt,
+	flatMapToDouble,
+	flatMapToLong
+the same of map operation, but can create the several elements
+from one element
+collection.stream().flatMap((p) -> Arrays.asList(p.split(",")).stream()).toArray(String[]::new)
