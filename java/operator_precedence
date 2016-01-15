@@ -29,13 +29,13 @@ new				object creation
 +				string concatenation
 
 ## 6	left to right
-<< >>			shift
+<< >>				shift
 >>>				shift
 
-## 7			left to right
-<  <=			relational type comparison	
->  >=			relational type comparison	
-instanceof		relational type comparison
+## 7	left to right
+<  <=				relational type comparison	
+>  >=				relational type comparison	
+instanceof			relational type comparison
 	
 ## 8 	left to right
 ==				equality
@@ -60,7 +60,7 @@ instanceof		relational type comparison
 ?:				conditional	
 
 ## 15	right to left
-  =   +=   -=	assignment
- *=   /=   %=	assignment
- &=   ^=   |=	assignment
-<<=  >>= >>>=	assignment
+  =   +=   -=			assignment
+ *=   /=   %=			assignment
+ &=   ^=   |=			assignment
+<<=  >>= >>>=			assignment
