@@ -1,0 +1,66 @@
+Operator Precedence in Java
+
+## 1	left to right
+[]				access array element
+.				access object member
+()				invoke a method
+++				post-increment
+--				post-decrement
+
+## 2	right to left 
+++				pre-increment
+--				pre-decrement
++				unary plus
+-				unary minus
+!				logical NOT
+~				bitwise NOT		
+
+## 3 	right to left
+()				cast
+new				object creation	
+
+## 4 	 left to right
+*				multiplicative
+/				multiplicative
+%				multiplicative
+
+## 5	left to right
++ -				additive
++				string concatenation
+
+## 6	left to right
+<< >>			shift
+>>>				shift
+
+## 7			left to right
+<  <=			relational type comparison	
+>  >=			relational type comparison	
+instanceof		relational type comparison
+	
+## 8 	left to right
+==				equality
+!=				equality
+
+## 9 	left to right
+&				bitwise AND
+
+## 10	left to right
+^				bitwise XOR	
+
+## 11	left to right
+|				bitwise OR
+
+## 12	left to right 
+&&				conditional AND	
+
+## 13	left to right
+||				conditional OR
+
+## 14	right to left
+?:				conditional	
+
+## 15	right to left
+  =   +=   -=	assignment
+ *=   /=   %=	assignment
+ &=   ^=   |=	assignment
+<<=  >>= >>>=	assignment
