@@ -1,0 +1,2 @@
+open tail session
+tail -f /usr/local/tomcat2/logs/catalina.out
