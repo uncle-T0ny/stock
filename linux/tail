@@ -1,2 +1,4 @@
 open tail session
 tail -f /usr/local/tomcat2/logs/catalina.out
+show last 50 lines
+tail -n 50 /usr/local/tomcat2/logs/catalina.out
