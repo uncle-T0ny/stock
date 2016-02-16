@@ -1,0 +1,3 @@
+replace whe part of text
+(?!IGNORE_TEXT_PATTERN)\);
+replace on , 1);
