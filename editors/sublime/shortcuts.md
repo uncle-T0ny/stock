@@ -7,8 +7,8 @@
 **Ctrl + G** - переход на строку с номером.
 **Ctrl + Shift + D** - дублирование строки
 **Ctrl + Shift + K** - удалить строку
-**Ctrl + k + b** - Show/Hide slidebar 
-**Ctrl + l** - Select line 
+**Ctrl + K + B** - Show/Hide slidebar 
+**Ctrl + L** - Select line 
 **Ctrl + N** - new file 
 
 **Shift + F11** - full screen mode
