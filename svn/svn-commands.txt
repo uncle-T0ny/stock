@@ -1,0 +1,80 @@
+>Делаем checkout:
+
+svn co --username eax https://example.com/project/trunk/
+svn co file:///usr/local/svn/repos/test
+svn co svn://192.168.0.1/test --username jimmy
+
+Подсасываем последние изменения:
+svn up
+
+Проверить, в какой ветке мы находимся и на какой сервер смотрим:
+svn info
+
+Посмотреть историю изменений:
+svn up
+svn log | less
+
+История изменений с diff’ами, аналог git log -p:
+svn log --diff | less
+
+Кто какие строчки когда менял:
+svn blame -v test.txt
+
+Посмотреть незакомиченные изменения:
+svn diff
+
+Какие файлы были изменены или добавлены:
+svn diff --summarize
+
+Изменения в рамках ревизиции, аналог git show:
+svn diff -c 123456
+
+Посмотреть измененные в ревизии файлы:
+svn diff --summarize -c 123456
+
+Изменения по сравнению с текущей ревизией, аналог git diff:
+svn diff -r 123456
+svn diff --summarize -r 123456
+
+Применение сохраненного в файл дифа, аналог git apply:
+patch -p0 -i myfile.diff
+
+Отменить последние изменения, аналог git reset --hard HEAD:
+svn revert --recursive .
+
+Текущее состояние репозитория, измененные файлы и так далее:
+svn status
+
+Удалить неотслеживаемые файлы и каталоги — встроенной команды, увы, нет, но можно прописать алиас в .bashrc:
+svn status | perl -lne 'if(/^\?\s+(.*?)$/){ print $1 }' | xargs rm -r
+
+Создание нового бранча:
+svn copy https://example.com/project/trunk/ \
+  https://example.com/project/branches/test-branch
+
+Переключение на бранч:
+cd path/to/trunk
+cd ..
+mkdir branches
+cd branches
+svn co https://example.com/project/branches/test-branch
+cd test-branch
+
+Мерж бранча:
+svn merge http://example.ru/project/branches/test-branch
+
+Добавить файл:
+svn add text.txt
+
+Переименовать файл:
+svn mv from.txt to.txt
+
+Удалить файл:
+svn del file.txt
+
+Lock/unlock, чтобы файл никто не мог менять кроме нас:
+svn lock file.txt
+svn unlock file.txt
+
+Коммит и сразу пуш, потому что это SVN:
+svn commit -m 'Your comment here'
