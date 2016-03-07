@@ -1,0 +1,2 @@
+create alias on a current session
+alias rm='rm -i'
