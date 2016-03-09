@@ -1,1 +1,2 @@
+create symbolic link
 ln -s ./folder link-name
