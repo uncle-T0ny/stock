@@ -1,3 +1,13 @@
 -- bind function to class 
 -- in constructor
 this.fucntionName = this.fucntionName.bind(this)
+
+-- reduce function, iterate from first to last element in array and call the action
+-- also exist reduceRight which iterates from last to first element in array.
+var arr = [1, 2, 3];
+var initialVal = 0;
+var result = arr.reduce(function(previousVal, currentVal, idx, arr) {
+  return previousVal + currentVal;
+}, 0);
+
+console.log('res is: ' + result) // 6
