@@ -8,6 +8,22 @@ var arr = [1, 2, 3];
 var initialVal = 0;
 var result = arr.reduce(function(previousVal, currentVal, idx, arr) {
   return previousVal + currentVal;
-}, 0);
+}, initialVal);
 
 console.log('res is: ' + result) // 6
+
+-- map function, transform one array to other, and call action for each element
+var arr = [1, 2, 3];
+var result = arr.map(function(el) {
+  return el * 2;
+});
+
+console.log(result); //[2, 4, 6]
+
+-- filter function, filter elements in array by predicate
+var arr = [1, -1, 2, -2, 3];
+var positiveArr = arr.filter(function(number) {
+  return number > 0;
+});
+
+console.log( positiveArr ); // 1,2,3
