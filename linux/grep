@@ -1,0 +1,2 @@
+-- exclude dir
+grep -ir "some pattern" --exclude-dir=dirname
