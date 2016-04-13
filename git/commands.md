@@ -1,3 +1,6 @@
+## clone repository 
+git clone ssh://root@ip-address/path-to-project/ProjectName.git
+
 ##merge without autocommit
 git merge v1.0 --no-commit --no-ff
 
