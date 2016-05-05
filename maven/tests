@@ -1,0 +1,5 @@
+-- skip test
+mvn install -Dmaven.test.skip=true
+
+-- execute single test
+mvn -Dtest=TestClassName test
