@@ -1,0 +1,4 @@
+
+-- keep session running after disconnection
+nohup long-running-process &
+exit
