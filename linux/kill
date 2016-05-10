@@ -1,0 +1,4 @@
+-- kill process by bid
+kill -9 PID
+-- kill process by app-name 
+killall -9 firefox-bin
