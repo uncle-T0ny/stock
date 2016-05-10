@@ -1,0 +1,2 @@
+-- see the running app on specific port 
+lsof -i:8084
