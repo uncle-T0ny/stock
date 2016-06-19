@@ -1,0 +1,3 @@
+-- create several folders by pattern 
+mkdir domain-{1,2}.com
+mkdir -p $USER/folder{1,2,3}
