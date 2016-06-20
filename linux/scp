@@ -1,3 +1,2 @@
-scp copy the files via ssh
-
-scp root@192.168.0.120:/usr/local/tomcat2/webapps/proftrading/WEB-INF/fix/pfsoft.ipf /home/rant/pfsoft.ipf
+-- scp copy the files via ssh
+scp root@192.168.0.120:/usr/local/tomcat2/file.extension ~/file.extension
