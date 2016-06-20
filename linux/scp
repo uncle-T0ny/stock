@@ -1,2 +1,2 @@
--- scp copy the files via ssh
+-- copy the files via ssh
 scp root@192.168.0.120:/usr/local/tomcat2/file.extension ~/file.extension
