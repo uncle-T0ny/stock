@@ -1,0 +1,3 @@
+-- is POSIX command to ignore HUP (hungup) signal
+-- we run a process in the background
+alias idea='nohup ~/apps/idea-IU-135.1230/bin/idea.sh > /dev/null 2>&1 &'
