@@ -1,2 +1,5 @@
 -- see what file process has opened
 ls -l /proc/PID/fd
+
+-- what executable process is running
+ls -l /proc/PID/exe
