@@ -1,0 +1,2 @@
+-- show full command line with arguments
+tr '\0' '\n' </proc/PID/cmdline
