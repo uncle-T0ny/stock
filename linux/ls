@@ -1,0 +1,2 @@
+-- see what file process has opened
+ls -l /proc/PID/fd
