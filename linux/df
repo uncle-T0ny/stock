@@ -1,2 +1,5 @@
 -- look at disk free space 
 df -h /boot
+
+-- sort files/folders by size 
+du -sk *|sort -n
