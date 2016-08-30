@@ -1,0 +1,2 @@
+-- look at disk free space 
+df -h /boot
