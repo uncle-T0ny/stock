@@ -1,0 +1,7 @@
+-- In ES6 there is method Object.assign()
+const obj = {foo:123};
+Object.assign(obj, {bar:true});
+console.log(JSON.stringify(obj));// {"foo":123,"bar":true}
+
+-- shallow clone an object 
+var copy = Object.assign({ __proto__: obj.__proto__ }, obj);
