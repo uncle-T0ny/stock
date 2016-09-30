@@ -1,0 +1,11 @@
+-- show current branch
+git branch 
+
+-- create && checkout new branch
+git branch newBranchName
+
+-- show all remote branches
+git branch -r
+
+-- show all remote and local branches
+git branch -a
