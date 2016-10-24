@@ -9,3 +9,9 @@ git branch -r
 
 -- show all remote and local branches
 git branch -a
+
+-- rename branch
+1. switch to branch which needs to be renamed
+2. git branch -m <new_name>
+3. git push origin :<old_name>
+4. git push origin <new_name>:refs/heads/<new_name>
