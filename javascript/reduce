@@ -5,3 +5,5 @@ var initialVal = 0;
 var result = arr.reduce(function(previousVal, currentVal, idx, arr) {
   return previousVal + currentVal;
 }, initialVal);
+
+console.log('res is: ' + result) // 6
