@@ -1,0 +1,3 @@
+-- bind function to class 
+-- in constructor
+this.fucntionName = this.fucntionName.bind(this)
