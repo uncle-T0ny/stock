@@ -1,0 +1,7 @@
+-- map function, transform one array to other, and call action for each element
+var arr = [1, 2, 3];
+var result = arr.map(function(el) {
+  return el * 2;
+});
+
+console.log(result); //[2, 4, 6]
